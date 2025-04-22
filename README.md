@@ -1,16 +1,12 @@
 # 🎓 Student Club Participation Prediction
 
-This project aims to predict student participation in various college clubs using machine learning. By analyzing academic, demographic, and interest-based features, the model helps identify students who are likely to engage in extracurricular activities. This assists college clubs in organizing better events and improving student involvement.
+This project uses machine learning to predict whether a student will participate in college clubs based on their interest level and availability. It leverages classification algorithms and evaluates performance using standard metrics and visual tools.
 
 ---
 
 ## 🔍 Problem Statement
 
-Colleges often find it challenging to forecast which students will participate in club activities. An accurate prediction model can help clubs:
-
-- Target the right students for event promotions
-- Allocate resources efficiently
-- Encourage participation through personalized outreach
+College clubs often face uncertainty about student engagement. This model predicts student participation using features like interest level and free hours per week. Accurate predictions can help improve club targeting, resource allocation, and overall engagement.
 
 ---
 
@@ -19,38 +15,38 @@ Colleges often find it challenging to forecast which students will participate i
 - Python
 - Pandas, NumPy
 - Scikit-learn
-- Matplotlib, Seaborn (for data visualization)
+- Seaborn, Matplotlib
 - Jupyter Notebook
 
 ---
 
-## 📊 Features Considered
+## 📊 Features Used
 
-- Academic performance (CGPA, attendance)
-- Year of study and department
-- Past participation history
-- Personal interests and hobbies
-- Event feedback (optional)
+- `interest_level`: A student's interest on a scale (e.g., 1–10)
+- `free_hours_per_week`: How much free time a student has each week
+- `club_participation`: Target variable (`yes`/`no`)
 
 ---
 
-## 🔧 ML Algorithms Explored
+## 🔧 Machine Learning Approach
 
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- K-Nearest Neighbors (KNN)
-
----
-
-## ✅ Outcomes
-
-- Predicts whether a student is likely to participate in specific clubs.
-- Helps student coordinators make data-driven decisions.
-- Provides insights into factors influencing club involvement.
+- **Model**: Random Forest Classifier
+- **Metrics Used**: Accuracy, Precision, Recall
+- **Visualization**: Confusion Matrix Heatmap
 
 ---
 
-## 📁 Folder Structure
+## ✅ Results
 
-![Screenshot 2025-04-22 152847](https://github.com/user-attachments/assets/46fe450f-198d-49ec-9f12-00adba945617)
+- **Accuracy**: ~50%
+- **Precision**: ~57%
+- **Recall**: ~36%
+- ![Screenshot 2025-04-22 162637](https://github.com/user-attachments/assets/2da09d5a-8ce6-4436-b66b-ad5654b89f7f)
+
+
+> Note: These metrics suggest the model could benefit from additional features or more data.
+
+---
+
+## 📁 Project Structure
+
